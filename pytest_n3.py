@@ -45,7 +45,7 @@ for i in range(1, n_sim):
     H[i] = h
 
 t_init = 1e5
-N_init = 20000
+N_init = 70000
 r_init = 5e-8
 mu_init = 1e-9
 
