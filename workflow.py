@@ -8,8 +8,8 @@ for i in range(10):
                inputs=[], 
                outputs=['results/tab_{}.csv'.format(i)],  
                cores=3,
-               memory='12g',
-               walltime= '03:00:00',
+               memory='36g',
+               walltime= '12:00:00',
                account='Primategenomes') << """
     python pytest.py {}
     """.format(i)
@@ -21,8 +21,8 @@ for i in range(10, 20):
                inputs=[],
                outputs=['results/tab_{}.csv'.format(i)],
                cores=3,
-               memory='12g',
-               walltime= '06:00:00',
+               memory='36g',
+               walltime= '12:00:00',
                account='Primategenomes') << """
     python pytest_n3.py {}
     """.format(i)
